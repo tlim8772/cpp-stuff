@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <omp.h>
+//#include <omp.h>
 #include "time.cpp"
 using namespace std;
 
@@ -108,8 +108,8 @@ void test(function<void(vector<int>&,int,int)> sorter, int sz) {
 int main() {
 
     
-    //test(mergeSort, 1e6);
+    test(mergeSort, 1e6);
     test(ompMergeSort, 1e6);
-    //test(parallelMergeSort, 1e6);
+    test(parallelMergeSort, 1e6);
 
 }
